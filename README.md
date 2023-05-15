@@ -4,7 +4,10 @@
 ### XÂY DỰNG APP BÁN HÀNG MỸ PHẨM KATCHI
 - Mã lớp HP: MOPR331279_22_2_07
 - GVHD: Nguyễn Hữu Trung
-- Nhóm thực hiện: Nhóm 13
+- Nhóm thực hiện: Nhóm 13	
+	- Võ Hồng Khang	
+	- Bùi Đặng Quốc Chí	
+	- Nguyễn Công Thành
 - Học Kỳ: II - Năm Học: 2022-2023
 ## Thông tin phần mềm
 ### Tên phần mềm: App Bán hàng mỹ phẩm Katchi ( Lấy ý tưởng từ 3 thành viên nhóm Khang, Thành, Chí)
