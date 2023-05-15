@@ -1,6 +1,6 @@
 # Andriod_programming_FE
 - Đồ án học phần
-## LẬP TRÌNH ANDROI
+## LẬP TRÌNH ANDROID
 ### XÂY DỰNG APP BÁN HÀNG MỸ PHẨM KATCHI
 - Mã lớp HP: MOPR331279_22_2_07
 - GVHD: Nguyễn Hữu Trung
