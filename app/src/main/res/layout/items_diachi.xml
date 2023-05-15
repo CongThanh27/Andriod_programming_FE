@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:elevation="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/lnlDiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_margin="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtdiachi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:layout_margin="3dp"
+                android:ellipsize="end"
+                android:padding="3dp"
+
+                android:drawableStart="@drawable/adressgiaohang_16"
+                android:gravity="center_vertical"
+                android:text=" 5/4 Lê Văn Chí"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtSodienthoai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/diachigiaohang_16"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:text=" 0387102216"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:textColor="#EC0013"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

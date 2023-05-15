@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrolldeals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            tools:context=".view.DealsActivity">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:background="@drawable/backdgroundeal1"
+                tools:ignore="MissingConstraints"/>
+
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper1"
+                android:layout_width="wrap_content"
+                android:layout_height="145dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/slidedeal3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/coupondeal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewFlipper1"
+                tools:ignore="MissingConstraints"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/white_background"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:weightSum="3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:weightSum="3"
+                    android:background="@drawable/deal_background2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_weight="1.45"
+                        android:orientation="vertical"
+                        android:layout_height="160dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_margin="8dp"
+                            android:text="HOÀN 20% FPOINT TỐI ĐA 20K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_margin="8dp"
+                            android:text="ĐƠN HÀNG TỪ 50K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_margin="8dp"
+                            android:text="NHẬP MÃ NGAY"/>
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/deal_background"
+                            android:layout_margin="8dp"
+                            android:layout_marginRight="14dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_height="160dp"
+                        android:background="@color/orange"
+                        android:layout_width="4dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1.45"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:layout_width="200dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="15/05/2023 17:00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#F79F5D"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="HSYN67HG"/>
+
+                        <TextView
+                            android:id="@+id/txtLayMaNgay1"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/btn_laymangay"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="LẤY MÃ NGAY"/>
+
+                        <TextView
+                            android:id="@+id/txtChiTietTheLe"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#F79F5D"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/btn_chitietthele"
+                            android:text="CHI TIẾT THỂ LỆ"
+                            android:layout_margin="4dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:weightSum="3"
+                    android:background="@drawable/deal_background2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_weight="1.45"
+                        android:orientation="vertical"
+                        android:layout_height="160dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_margin="8dp"
+                            android:text="HOÀN 40% FPOINT TỐI ĐA 40K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_margin="8dp"
+                            android:text="ĐƠN HÀNG TỪ 90K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_margin="8dp"
+                            android:text="NHẬP MÃ NGAY"/>
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/deal_background"
+                            android:layout_margin="8dp"
+                            android:layout_marginRight="14dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_height="160dp"
+                        android:background="@color/orange"
+                        android:layout_width="4dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1.45"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:layout_width="200dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="15/05/2023 17:00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#F79F5D"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="OIUO90KS"/>
+
+                        <TextView
+                            android:id="@+id/txtLayMaNgay2"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/btn_laymangay"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="LẤY MÃ NGAY"/>
+
+                        <TextView
+                            android:id="@+id/txtChiTietTheLe1"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#F79F5D"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/btn_chitietthele"
+                            android:text="CHI TIẾT THỂ LỆ"
+                            android:layout_margin="4dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:weightSum="3"
+                    android:background="@drawable/deal_background2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_weight="1.45"
+                        android:orientation="vertical"
+                        android:layout_height="160dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_margin="8dp"
+                            android:text="HOÀN 100% FPOINT TỐI ĐA 10K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_margin="8dp"
+                            android:text="ĐƠN HÀNG TỪ 20K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_margin="8dp"
+                            android:text="NHẬP MÃ NGAY"/>
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/deal_background"
+                            android:layout_margin="8dp"
+                            android:layout_marginRight="14dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_height="160dp"
+                        android:background="@color/orange"
+                        android:layout_width="4dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1.45"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:layout_width="200dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="15/05/2023 17:00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#F79F5D"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="HKWGCMS9"/>
+
+                        <TextView
+                            android:id="@+id/txtLayMaNgay3"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/btn_laymangay"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="LẤY MÃ NGAY"/>
+
+                        <TextView
+                            android:id="@+id/txtChiTietTheLe2"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#F79F5D"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/btn_chitietthele"
+                            android:text="CHI TIẾT THỂ LỆ"
+                            android:layout_margin="4dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/coupon2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                tools:ignore="MissingConstraints"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/white_background"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:weightSum="3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:weightSum="3"
+                    android:background="@drawable/deal_background2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_weight="1.45"
+                        android:orientation="vertical"
+                        android:layout_height="160dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_margin="8dp"
+                            android:text="MÃ GIẢM 10K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_margin="8dp"
+                            android:text="Đơn hàng từ 150K (TOÀN SÀN)"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_margin="8dp"
+                            android:text="MUA NGAY"/>
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/deal_background"
+                            android:layout_margin="8dp"
+                            android:layout_marginRight="14dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_height="160dp"
+                        android:background="@color/orange"
+                        android:layout_width="4dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1.45"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:layout_width="200dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="15/05/2023 17:00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#F79F5D"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="CHIHIAMMS9"/>
+
+                        <TextView
+                            android:id="@+id/txtLayMaNgay4"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/btn_laymangay"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="LẤY MÃ NGAY"/>
+
+                        <TextView
+                            android:id="@+id/txtChiTietTheLe3"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#F79F5D"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/btn_chitietthele"
+                            android:text="CHI TIẾT THỂ LỆ"
+                            android:layout_margin="4dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:weightSum="3"
+                    android:background="@drawable/deal_background2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_weight="1.45"
+                        android:orientation="vertical"
+                        android:layout_height="160dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_margin="8dp"
+                            android:text="MÃ GIẢM 20k"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_margin="8dp"
+                            android:text="Đơn hàng từ 160K (TOÀN SÀN)"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_margin="8dp"
+                            android:text="MUA NGAY"/>
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/deal_background"
+                            android:layout_margin="8dp"
+                            android:layout_marginRight="14dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_height="160dp"
+                        android:background="@color/orange"
+                        android:layout_width="4dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1.45"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:layout_width="200dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="15/05/2023 17:00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#F79F5D"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="THANHCMS3"/>
+
+                        <TextView
+                            android:id="@+id/txtLayMaNgay5"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/btn_laymangay"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="LẤY MÃ NGAY"/>
+
+                        <TextView
+                            android:id="@+id/txtChiTietTheLe4"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#F79F5D"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/btn_chitietthele"
+                            android:text="CHI TIẾT THỂ LỆ"
+                            android:layout_margin="4dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:weightSum="3"
+                    android:background="@drawable/deal_background2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_weight="1.45"
+                        android:orientation="vertical"
+                        android:layout_height="160dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_margin="8dp"
+                            android:text="MÃ GIẢM 30K"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_margin="8dp"
+                            android:text="Đơn hàng từ 170K (TOÀN SÀN)"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_margin="8dp"
+                            android:text="MUA NGAY"/>
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="10dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/deal_background"
+                            android:layout_margin="8dp"
+                            android:layout_marginRight="14dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_height="160dp"
+                        android:background="@color/orange"
+                        android:layout_width="4dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1.45"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:layout_width="200dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="15/05/2023 17:00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#F79F5D"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:text="HKWGCKHANG2"/>
+
+                        <TextView
+                            android:id="@+id/txtLayMaNgay6"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/btn_laymangay"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="LẤY MÃ NGAY"/>
+
+                        <TextView
+                            android:id="@+id/txtChiTietTheLe5"
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:textColor="#F79F5D"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/btn_chitietthele"
+                            android:text="CHI TIẾT THỂ LỆ"
+                            android:layout_margin="4dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/coupon3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="MissingConstraints"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <ImageView
+                android:id="@+id/imageViewUuDaiDoiTac"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/uudaitudoitac"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewDeal"
+                tools:ignore="MissingConstraints"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDoiTac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewUuDaiDoiTac" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</layout>

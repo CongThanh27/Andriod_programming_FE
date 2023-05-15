@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".view.AccountActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="#F3FEF5"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/profile_picture"
+                        android:src="@drawable/icons8_test_account_64"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_qt_account"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtnameOfUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:text="Name: " />
+                        <EditText
+                            android:id="@+id/nameOfUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            tools:text="@string/marwa_eltayeb" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:drawableStart="@drawable/icons8_gmail_48"
+                        android:id="@+id/txtemailOfUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/emailOfUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/black"
+                        tools:text="@string/marwa_eltayeb_yahoo_com" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtgenderOfUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/icons8_unisex_48"/>
+
+                    <TextView
+                        android:id="@+id/genderOfUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        tools:text="Gender" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtageOfUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableStart="@drawable/icons8_compare_heights_48"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/ageOfUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/black"
+                        tools:text="Age" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_save_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_qt_account"
+                    android:text="Save Update"
+                    android:layout_gravity="center">
+                </Button>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/myOrders"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_add_shopping_cart_48"
+                android:drawablePadding="20dp"
+                android:gravity="start|center"
+                android:text="@string/my_orders"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/myWishList"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_heart_48"
+                android:drawablePadding="20dp"
+                android:gravity="start|center"
+                android:text="@string/my_wishlist"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/languages"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_globe_48"
+                android:drawablePadding="20dp"
+                android:text="@string/languages"
+                android:gravity="start|center"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/helpCenter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_ask_question_48"
+                android:drawablePadding="20dp"
+                android:text="@string/help_center"
+                android:gravity="start|center"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/shareWithFriends"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_share_48"
+                android:drawablePadding="20dp"
+                android:gravity="start|center"
+                android:text="@string/share_with_friends"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rateUs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_star_filled_48"
+                android:drawablePadding="20dp"
+                android:gravity="start|center"
+                android:text="@string/rate_us_on_play_store"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_password_48"
+                android:drawablePadding="20dp"
+                android:gravity="start|center"
+                android:text="@string/change_password"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/deleteAccount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_qt_account"
+                android:drawableStart="@drawable/icons8_delete_48"
+                android:drawablePadding="20dp"
+                android:gravity="start|center"
+                android:text="@string/delete_my_account"
+                android:textColor="@color/vDarkGray"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
